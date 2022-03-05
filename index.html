@@ -5,11 +5,203 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>code-mich</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Nunito:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <script src="https://kit.fontawesome.com/f2dd5a1fe8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
+    <!-- nav  -->
+    <nav class="mobileNav">
+        <div class="wrapper">
+            <a href="#home">
+                <h4>code-mich</h4>
+            </a>
+            <span class="fa-solid fa-bars"></span>
+            <ul class="hamburger">
+                <li class="mobileNavItem">
+                    <a href="#about">
+                        <p>About</p>
+                    </a>
+                </li>
+                <li class="mobileNavItem">
+                    <a href="#projects">
+                        <p>Projects</p>
+                    </a>
+                </li>
+                <li class="mobileNavItem">
+                    <a href="contact">
+                        <p>Contact</p>
+                    </a>
+                </li>
+            </ul>
+        </div> <!-- end of .wrapper -->
+    </nav>
+    <!-- END OF MOBILE NAV -->
 
+    <nav class="desktopNav">
+        <div class="wrapper">
+            <ul class="navBar">
+                <li class="navItem">
+                    <a href="#home">
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li class="navItem">
+                    <a href="#about">
+                        <p>About</p>
+                    </a>
+                </li>
+                <li class="navItem">
+                    <a href="#projects">
+                        <p>Projects</p>
+                    </a>
+                </li>
+                <li class="navItem">
+                    <a href="#contact">
+                        <p>Contact</p>
+                    </a>
+                </li>
+            </ul>
+        </div> <!-- end of .wrapper -->
+    </nav>
+    <!-- END OF DESKTOP NAV -->
+
+    <!-- landing -->
+    <header id="home">
+        <div class="wrapper">
+            <h2>Welcome to</h2>
+            <h1>code-mich</h1>
+        </div> <!-- end of .wrapper -->
+    </header>
+
+    <main>
+        <!-- about -->
+        <section id="about">
+            <div class="wrapper">
+                <div class="aboutImg">
+                    <img src="https://placebear.com/200/300" alt="">
+                </div> <!-- end of .aboutImg -->
+                <div class="aboutText">
+                    <h2>Hi there!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi non, optio ad quidem veritatis
+                        ratione debitis exercitationem nemo aspernatur, sed esse sint, necessitatibus pariatur natus
+                        unde asperiores nihil dolorem? Non?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sunt ea repellendus doloremque
+                        repellat illum, quia odio maxime, voluptatum autem debitis corrupti perferendis rem. Ab eum
+                        reiciendis officia! At, quidem.
+                    </p>
+                </div> <!-- end of .aboutText -->
+            </div> <!-- end of .wrapper -->
+        </section>
+
+
+        <!-- skills -->
+
+        <section id="skills">
+            <div class="wrapper">
+                <h2>Skills and Languages</h2>
+                <ul class="skillsContainer">
+                    <li class="skillItem">
+                        <span aria-hidden="true" class="devicon-html5-plain"></span>
+                        <h4>Html5</h4>
+                    </li>
+                    <li class="skillItem">
+                        <span aria-hidden="true" class="devicon-css3-plain"></span>
+                        <h4>Css3</h4>
+                    </li>
+                    <li class="skillItem">
+                        <span aria-hidden="true" class="devicon-sass-original"></span>
+                        <h4>Sass</h4>
+                    </li>
+                    <li class="skillItem">
+                        <span aria-hidden="true" class="devicon-javascript-plain"></span>
+                        <h4>Javascript</h4>
+                    </li>
+                    <li class="skillItem">
+                        <span aria-hidden="true" class="devicon-jquery-plain"></span>
+                        <h4>jQuery</h4>
+                    </li>
+                    <li class="skillItem">
+                        <span aria-hidden="true" class="devicon-react-original"></span>
+                        <h4>React</h4>
+                    </li>
+                    <li class="skillItem">
+                        <span aria-hidden="true" class="devicon-github-original"></span>
+                        <h4>Github</h4>
+                    </li>
+                    <li class="skillItem">
+                        <span aria-hidden="true" class="devicon-firebase-plain"></span>
+                        <h4>Firebase</h4>
+                    </li>
+                    <li class="skillItem">
+                        <span aria-hidden="true" class="fa-solid fa-universal-access"></span>
+                        <h4>Accessibilty</h4>
+                    </li>
+                    <li class="skillItem">
+                        <span aria-hidden="true" class="fa-solid fa-mobile-screen"></span>
+                        <h4>Responsive design</h4>
+                    </li>
+                </ul>
+            </div> <!-- end of .wrapper -->
+        </section>
+
+        <!-- projects -->
+        <section id="projects">
+            <div class="wrapper">
+                <ul class="projectList">
+
+                    <li class="projectImg">
+                        <img src="https://placebear.com/150/400" alt="">
+                    </li> <!-- end of first .projectImg -->
+                    <li class="projectImg">
+                        <img src="https://placebear.com/150/400" alt="">
+                    </li> <!-- end of second .projectImg -->
+                    <li class="projectImg">
+                        <img src="https://placebear.com/150/400" alt="">
+                    </li> <!-- end of third .projectImg -->
+            </div> <!-- end of .projectContainer -->
+            </ul>
+            </div> <!-- end of .wrapper -->
+        </section>
+
+        <!-- contact -->
+        <section id="contact">
+            <div class="wrapper">
+                <form action="">
+                    <label for="name" class="sr-only">Name</label>
+                    <input type="text" id="name" class="name" placeholder="Name" required>
+
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" id="email" class="email" placeholder="Email" required>
+
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea type="textarea" class="message" id="message" cols="25" rows="10"
+                        placeholder="Message"></textarea>
+
+                    <button>Submit</button>
+                </form>
+
+                <div class="contactText">
+                    <h2>Let's chat!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ipsa mollitia incidunt nihil
+                        voluptates esse inventore nobis. Facilis eos, maiores deserunt dolores dolorum asperiores
+                        nostrum sit alias nulla voluptas distinctio?</p>
+                </div> <!-- end of .contactText -->
+            </div> <!-- end of .wrapper -->
+        </section>
+
+    </main>
+    <!-- footer -->
+    <footer>
+        <p>Designed and developed by Michelle Wong</p>
+    </footer>
+
+    <script src="scripts/app.js"></script>
 </body>
 
 </html>
