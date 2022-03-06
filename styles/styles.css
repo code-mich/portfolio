@@ -234,3 +234,138 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* SCSS HEX */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+html {
+  font-size: 125%;
+}
+
+img {
+  display: block;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h1,
+h2 {
+  font-family: "Bitter", serif;
+}
+
+h3,
+h4,
+p,
+a,
+label,
+button {
+  font-family: "Nunito", sans-serif;
+}
+
+h1 {
+  font-size: 2.2rem;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+nav {
+  background-color: #011638ff;
+  color: #FDCA40;
+  padding: 5% 0;
+}
+nav a {
+  color: #FDCA40;
+  padding: 0 2.5%;
+}
+nav .wrapper,
+nav .hamburger,
+nav .navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+nav .wrapper {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.desktopNav {
+  display: none;
+}

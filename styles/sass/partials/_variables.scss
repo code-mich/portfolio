@@ -1,14 +1,32 @@
+// colours
+
+$brightAccent: #FDCA40;
+$white: #fff;
+
+$primary: #011638ff;
+$secondary: #2e294eff;
+$tertiary: #9055a2ff;
+$quaternary: #d499b9ff;
+$quinary: #e8c1c5ff;
+
+
+// fonts
+
+$headingFont: "Bitter", serif;
+$bodyFont: "Nunito", sans-serif;
+
+$baseFontSize: 1rem;
+
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+}
+
+
 /* SCSS HEX */
 // $light-cyan: #cee7e6ff;
 // $steel-teal: #5e807fff;
 // $shimmering-blush: #d88c9aff;
 // $english-violet: #513b56ff;
 // $maize-crayola: #e2c044ff;
-
-
-/* SCSS HEX */
-// $oxford-blue: #011638ff;
-// $space-cadet: #2e294eff;
-// $purpureus: #9055a2ff;
-// $kobi: #d499b9ff;
-// $baby-pink: #e8c1c5ff;

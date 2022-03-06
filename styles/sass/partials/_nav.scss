@@ -1,0 +1,24 @@
+nav {
+    background-color: $primary;
+    color: $brightAccent;
+    padding: 5% 0;
+    a {
+        color: $brightAccent;
+        padding: 0 2.5%;
+    }
+    .wrapper,
+    .hamburger,
+    .navBar {
+        @include flex(row);
+    }
+
+    .wrapper {
+        justify-content: flex-start
+    }
+
+}
+
+.desktopNav {
+    display: none;
+}
+
