@@ -235,6 +235,23 @@ html {
   overflow: hidden;
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* SCSS HEX */
 * {
   margin: 0;
@@ -278,6 +295,10 @@ main {
           flex: 1 0 auto;
 }
 
+section {
+  padding: 10% 0;
+}
+
 footer {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -297,23 +318,6 @@ img {
   margin: 0 auto;
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 h1,
 h2 {
   font-family: "Bitter", serif;
@@ -331,6 +335,7 @@ button {
 h1 {
   font-size: 2.2rem;
   letter-spacing: 3px;
+  line-height: 1.4;
 }
 
 h2 {
@@ -338,17 +343,22 @@ h2 {
   letter-spacing: 1px;
 }
 
+h4,
+p {
+  font-size: 1rem;
+}
+
+.subHead {
+  font-size: 1rem;
+}
+
 nav {
   background-color: #011638ff;
   color: #FDCA40;
   padding: 5% 0;
-}
-nav a {
-  color: #FDCA40;
-  padding: 0 2.5%;
+  position: relative;
 }
 nav .wrapper,
-nav .hamburger,
 nav .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,11 +371,64 @@ nav .navBar {
       flex-wrap: wrap;
 }
 nav .wrapper {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav button {
+  padding: 2.5%;
+  border: none;
+  background-color: #011638ff;
+  color: #FDCA40;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 20%;
+}
+nav button:hover, nav button:focus {
+  background-color: #FDCA40;
+  color: #011638ff;
+}
+nav .hamburgerItems {
+  position: absolute;
+  bottom: -160%;
+  right: -100%;
+  display: block;
+  text-align: center;
+}
+nav .hamburgerItems li {
+  background-color: rgba(1, 22, 56, 0.6);
+  padding: 10%;
+}
+nav a {
+  color: #FDCA40;
 }
 
 .desktopNav {
   display: none;
+}
+
+header {
+  background-color: #2e294eff;
+  color: #FDCA40;
+  padding: 10% 0;
+}
+
+.skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.skills li {
+  padding: 5%;
+  width: 30%;
 }

@@ -1,0 +1,9 @@
+.skills {
+    ul {
+        @include flex(row);
+    }
+    li {
+        padding: 5%;
+        width: 30%;
+    }
+}

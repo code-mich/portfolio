@@ -18,25 +18,33 @@
     <!-- nav  -->
     <nav class="mobileNav">
         <div class="wrapper">
-            <!-- NOTE: ADD SR READER ACCESSIBILITY -->
-            <span class="fa-solid fa-bars"></span>
             <a href="#home">
                 <h4>code-mich</h4>
             </a>
-            <ul class="hamburger">
+            <!-- NOTE: ADD SR READER ACCESSIBILITY -->
+            <label for="menu" class="sr-only">Navigation menu</label>
+            <button id="menu" aria-expanded="false">
+                <span class="fa-solid fa-bars" aria-hidden="true"></span>
+            </button>
+            <!-- <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div> -->
+            <ul class="hamburgerItems">
                 <li class="mobileNavItem">
                     <a href="#about">
-                        <p>About</p>
+                        About
                     </a>
                 </li>
                 <li class="mobileNavItem">
                     <a href="#projects">
-                        <p>Projects</p>
+                        Projects
                     </a>
                 </li>
                 <li class="mobileNavItem">
                     <a href="contact">
-                        <p>Contact</p>
+                        Contact
                     </a>
                 </li>
             </ul>
@@ -76,7 +84,7 @@
     <header id="home">
         <div class="wrapper">
             <h1>code-mich</h1>
-            <h2>Front-end web developer</h2>
+            <h2 class="subHead">Front-end web developer</h2>
         </div> <!-- end of .wrapper -->
     </header>
 
@@ -85,7 +93,7 @@
         <section id="about">
             <div class="wrapper">
                 <div class="aboutImg">
-                    <img src="https://placebear.com/200/300" alt="">
+                    <img src="https://placebear.com/200/200" alt="">
                 </div> <!-- end of .aboutImg -->
                 <div class="aboutText">
                     <h2>Hi there!</h2>
@@ -103,40 +111,40 @@
 
         <!-- skills -->
 
-        <section id="skills">
+        <section id="skills" class="skills">
             <div class="wrapper">
                 <h2>Skills and Languages</h2>
                 <ul class="skillsContainer">
                     <li class="skillItem">
-                        <span aria-hidden="true" class="devicon-html5-plain"></span>
+                        <span aria-hidden="true" class="devicon devicon-html5-plain"></span>
                         <h4>Html5</h4>
                     </li>
                     <li class="skillItem">
-                        <span aria-hidden="true" class="devicon-css3-plain"></span>
+                        <span aria-hidden="true" class="devicon devicon-css3-plain"></span>
                         <h4>Css3</h4>
                     </li>
                     <li class="skillItem">
-                        <span aria-hidden="true" class="devicon-sass-original"></span>
+                        <span aria-hidden="true" class="devicon devicon-sass-original"></span>
                         <h4>Sass</h4>
                     </li>
                     <li class="skillItem">
-                        <span aria-hidden="true" class="devicon-javascript-plain"></span>
+                        <span aria-hidden="true" class="devicon devicon-javascript-plain"></span>
                         <h4>Javascript</h4>
                     </li>
                     <li class="skillItem">
-                        <span aria-hidden="true" class="devicon-jquery-plain"></span>
+                        <span aria-hidden="true" class="devicon devicon-jquery-plain"></span>
                         <h4>jQuery</h4>
                     </li>
                     <li class="skillItem">
-                        <span aria-hidden="true" class="devicon-react-original"></span>
+                        <span aria-hidden="true" class="devicon devicon-react-original"></span>
                         <h4>React</h4>
                     </li>
                     <li class="skillItem">
-                        <span aria-hidden="true" class="devicon-github-original"></span>
+                        <span aria-hidden="true" class="devicon devicon-github-original"></span>
                         <h4>Github</h4>
                     </li>
                     <li class="skillItem">
-                        <span aria-hidden="true" class="devicon-firebase-plain"></span>
+                        <span aria-hidden="true" class="devicon devicon-firebase-plain"></span>
                         <h4>Firebase</h4>
                     </li>
                     <li class="skillItem">

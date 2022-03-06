@@ -23,6 +23,17 @@ $baseFontSize: 1rem;
     flex-wrap: wrap;
 }
 
+// animations
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 
 /* SCSS HEX */
 // $light-cyan: #cee7e6ff;
