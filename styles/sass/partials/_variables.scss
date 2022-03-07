@@ -9,6 +9,8 @@ $tertiary: #9055a2ff;
 $quaternary: #d499b9ff;
 $quinary: #e8c1c5ff;
 
+$orangey: #f3c490;
+
 $mainBody: #8a7967;
 $subBody: #1f1e1f;
 $grey: #ececec;
@@ -18,9 +20,19 @@ $neutral: #a69893;
 // fonts
 
 $headingFont: "Bitter", serif;
+$subheadFont: "Roboto", sans-serif;
 $bodyFont: "Nunito", sans-serif;
 
 $baseFontSize: 1rem;
+
+@mixin highlight($color) {
+	content: "";
+	box-shadow: 0 0 10px $color;
+	height: 0.5rem;
+	width: 100%;
+	position: absolute;
+	z-index: -10;
+}
 
 @mixin flex($direction) {
     display: flex;

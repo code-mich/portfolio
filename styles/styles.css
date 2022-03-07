@@ -327,6 +327,10 @@ footer p {
   color: white;
 }
 
+body {
+  color: #1f1e1f;
+}
+
 h1,
 h2 {
   font-family: "Bitter", serif;
@@ -339,20 +343,18 @@ a,
 label,
 button {
   font-family: "Nunito", sans-serif;
-  color: #1f1e1f;
 }
 
 h1 {
   font-size: 2.2rem;
   letter-spacing: 3px;
   line-height: 1.4;
-  color: #fff;
+  color: #e8c1c5ff;
 }
 
 h2 {
   font-size: 1.5rem;
   letter-spacing: 1px;
-  color: #8a7967;
   padding: 5%;
 }
 
@@ -376,8 +378,8 @@ hr {
 }
 
 nav {
-  background-color: #1f1e1f;
-  color: #a69893;
+  background-color: #e8c1c5ff;
+  color: #fff;
   padding: 5% 0;
   position: relative;
 }
@@ -404,8 +406,8 @@ nav .mobileNavContainer {
 nav button {
   padding: 2.5%;
   border: none;
-  background-color: #1f1e1f;
-  color: #a69893;
+  background-color: #e8c1c5ff;
+  color: #fff;
   cursor: pointer;
   width: 2rem;
   height: 2rem;
@@ -414,8 +416,8 @@ nav button {
   transition: all 0.3s ease-in-out;
 }
 nav button:hover, nav button:focus {
-  background-color: #a69893;
-  color: #1f1e1f;
+  background-color: #fff;
+  color: #e8c1c5ff;
 }
 nav .hamburgerItems {
   position: absolute;
@@ -429,7 +431,7 @@ nav .hamburgerItems li {
   padding: 10%;
 }
 nav a, nav h4 {
-  color: #a69893;
+  color: #fff;
 }
 
 .desktopNav {
@@ -437,7 +439,6 @@ nav a, nav h4 {
 }
 
 header {
-  background-color: #a69893;
   padding: 10% 0;
 }
 header h1 {
@@ -512,6 +513,7 @@ header h2 {
 .skills .devicon,
 .skills .fa-solid {
   font-size: 2rem;
+  color: #f3c490;
 }
 
 .projects {
@@ -539,8 +541,96 @@ header h2 {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
+.projects .projectItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5% 0;
+}
+.projects .projectImg {
+  border: 3px solid #1f1e1f;
+}
 .projects a {
   padding: 5% 2.5%;
   text-transform: uppercase;
-  background-color: #a69893;
+  background-color: #e8c1c5ff;
+  color: #fff;
+  border: 2px solid #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.projects a:hover {
+  background-color: #fff;
+  color: #f3c490;
+  border: 2px solid #e8c1c5ff;
+}
+
+.contact {
+  background-image: url("../assets/i-like-food.svg");
+}
+.contact .contactText {
+  padding: 5%;
+  background-color: #fff;
+  border: 2px solid #f3c490;
+  -webkit-box-shadow: 10px -10px 0 #f3c490;
+          box-shadow: 10px -10px 0 #f3c490;
+}
+.contact hr {
+  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(#f3c490), to(#fff));
+  background: linear-gradient(to right, #fff, #f3c490, #fff);
+  border: 0;
+  height: 3px;
+}
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border: 3px solid #f3c490;
+  -webkit-box-shadow: -10px 10px 0 #f3c490;
+          box-shadow: -10px 10px 0 #f3c490;
+  background-color: #fff;
+  margin: 2.5% 0;
+  padding: 5% 0;
+}
+.contact input,
+.contact textarea {
+  width: 85%;
+  padding: 5%;
+  margin: 2.5% 0;
+  border: none;
+  border: 2px solid #ececec;
+  border-radius: 15px;
+  background-color: #ececec;
+}
+.contact input:focus,
+.contact textarea:focus {
+  border: 2px solid #1f1e1f;
+}
+.contact input:required,
+.contact textarea:required {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.contact button {
+  background-color: #f3c490;
+  padding: 2.5%;
+  width: 30%;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  -ms-flex-item-align: center;
+      align-self: center;
 }

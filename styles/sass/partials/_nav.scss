@@ -1,6 +1,6 @@
 nav {
-    background-color: $subBody;
-    color: $neutral;
+    background-color: $quinary;
+    color: $white;
     padding: 5% 0;
     position: relative;
     .mobileNavContainer,
@@ -15,8 +15,8 @@ nav {
     button {
         padding: 2.5%;
         border: none;
-        background-color: $subBody;
-        color: $neutral;
+        background-color: $quinary;
+        color: $white;
         cursor: pointer;
         width: 2rem;
         height: 2rem;
@@ -24,8 +24,8 @@ nav {
         transition: all 0.3s ease-in-out;
         &:hover,
         &:focus {
-            background-color: $neutral;
-            color: $subBody;
+            background-color: $white;
+            color: $quinary;
         }
     }
     .hamburgerItems {
@@ -40,7 +40,7 @@ nav {
         }
     }
     a, h4 {
-        color: $neutral;
+        color: $white;
     }
 
 }
