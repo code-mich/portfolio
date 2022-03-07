@@ -1,0 +1,6 @@
+.about {
+    .aboutContainer {
+        @include flex(column);
+        justify-content: center;
+    }
+}

@@ -318,6 +318,15 @@ img {
   margin: 0 auto;
 }
 
+footer {
+  background-color: #1f1e1f;
+  text-align: center;
+  padding: 2.5%;
+}
+footer p {
+  color: white;
+}
+
 h1,
 h2 {
   font-family: "Bitter", serif;
@@ -330,22 +339,36 @@ a,
 label,
 button {
   font-family: "Nunito", sans-serif;
+  color: #1f1e1f;
 }
 
 h1 {
   font-size: 2.2rem;
   letter-spacing: 3px;
   line-height: 1.4;
+  color: #fff;
 }
 
 h2 {
   font-size: 1.5rem;
   letter-spacing: 1px;
+  color: #8a7967;
+  padding: 5%;
 }
 
-h4,
+h4 {
+  font-size: 0.8rem;
+}
+
 p {
   font-size: 1rem;
+  padding: 5% 0;
+}
+
+hr {
+  color: neutral;
+  width: 6rem;
+  margin-left: 1rem;
 }
 
 .subHead {
@@ -353,12 +376,12 @@ p {
 }
 
 nav {
-  background-color: #011638ff;
-  color: #FDCA40;
+  background-color: #1f1e1f;
+  color: #a69893;
   padding: 5% 0;
   position: relative;
 }
-nav .wrapper,
+nav .mobileNavContainer,
 nav .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,7 +393,7 @@ nav .navBar {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-nav .wrapper {
+nav .mobileNavContainer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -381,16 +404,18 @@ nav .wrapper {
 nav button {
   padding: 2.5%;
   border: none;
-  background-color: #011638ff;
-  color: #FDCA40;
+  background-color: #1f1e1f;
+  color: #a69893;
   cursor: pointer;
   width: 2rem;
   height: 2rem;
   border-radius: 20%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 nav button:hover, nav button:focus {
-  background-color: #FDCA40;
-  color: #011638ff;
+  background-color: #a69893;
+  color: #1f1e1f;
 }
 nav .hamburgerItems {
   position: absolute;
@@ -403,8 +428,8 @@ nav .hamburgerItems li {
   background-color: rgba(1, 22, 56, 0.6);
   padding: 10%;
 }
-nav a {
-  color: #FDCA40;
+nav a, nav h4 {
+  color: #a69893;
 }
 
 .desktopNav {
@@ -412,9 +437,46 @@ nav a {
 }
 
 header {
-  background-color: #2e294eff;
-  color: #FDCA40;
+  background-color: #a69893;
   padding: 10% 0;
+}
+header h1 {
+  position: relative;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+}
+header h1::after {
+  content: "";
+  display: block;
+  background-image: url("../assets/light-bulb-svgrepo-com.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 82%;
+  top: 25%;
+  width: 80%;
+  height: 80%;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+header h2 {
+  color: #1f1e1f;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+}
+
+.about .aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills ul {
@@ -427,8 +489,58 @@ header {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .skills li {
-  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  padding: 5% 0;
   width: 30%;
+}
+.skills .devicon,
+.skills .fa-solid {
+  font-size: 2rem;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.projects .projectLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.projects a {
+  padding: 5% 2.5%;
+  text-transform: uppercase;
+  background-color: #a69893;
 }

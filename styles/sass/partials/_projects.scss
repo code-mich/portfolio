@@ -1,0 +1,13 @@
+.projects {
+    @include flex(column);
+
+    .projectLinks {
+        @include flex(row);
+        justify-content: space-evenly;
+    }
+    a {
+        padding: 5% 2.5%;
+        text-transform: uppercase;
+        background-color: $neutral;
+    }
+}

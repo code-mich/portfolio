@@ -10,22 +10,36 @@ a,
 label,
 button {
     font-family: $bodyFont;
+    color: $subBody;
 }
 
 h1 {
     font-size: 2.2rem;
     letter-spacing: 3px;
     line-height: 1.4;
+    color: $white;
 }
 
 h2 {
     font-size: 1.5rem;
     letter-spacing: 1px;
+    color: $mainBody;
+    padding: 5%;
 }
 
-h4,
+h4 {
+    font-size: 0.8rem;
+}
+
 p {
     font-size: $baseFontSize;
+    padding: 5% 0;
+}
+
+hr {
+    color: neutral;
+    width: 6rem;
+    margin-left: 1rem;
 }
 
 .subHead {

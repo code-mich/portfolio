@@ -1,30 +1,31 @@
 nav {
-    background-color: $primary;
-    color: $brightAccent;
+    background-color: $subBody;
+    color: $neutral;
     padding: 5% 0;
     position: relative;
-    .wrapper,
+    .mobileNavContainer,
     .navBar {
         @include flex(row);
     }
 
-    .wrapper {
+    .mobileNavContainer {
         justify-content: space-between;
         align-items: center;
     }
     button {
         padding: 2.5%;
         border: none;
-        background-color: $primary;
-        color: $brightAccent;
+        background-color: $subBody;
+        color: $neutral;
         cursor: pointer;
         width: 2rem;
         height: 2rem;
         border-radius: 20%;
+        transition: all 0.3s ease-in-out;
         &:hover,
         &:focus {
-            background-color: $brightAccent;
-            color: $primary;
+            background-color: $neutral;
+            color: $subBody;
         }
     }
     .hamburgerItems {
@@ -38,8 +39,8 @@ nav {
             padding: 10%;
         }
     }
-    a {
-        color: $brightAccent;
+    a, h4 {
+        color: $neutral;
     }
 
 }
