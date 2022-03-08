@@ -15,5 +15,11 @@
     .fa-solid {
         font-size: 2rem;
         color: $orangey;
+        transition: all 0.5s ease;
+        &:hover,
+        &:focus {
+            color: #994636;
+            transform: scale(1.1);
+        }
     }
 }

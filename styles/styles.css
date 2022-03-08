@@ -319,7 +319,7 @@ img {
 }
 
 footer {
-  background-color: #1f1e1f;
+  background-color: #32213A;
   text-align: center;
   padding: 2.5%;
 }
@@ -378,7 +378,7 @@ hr {
 }
 
 nav {
-  background-color: #e8c1c5ff;
+  background-color: #32213A;
   color: #fff;
   padding: 5% 0;
   position: relative;
@@ -460,7 +460,7 @@ header h1::after {
           transform: rotate(10deg);
 }
 header h2 {
-  color: #1f1e1f;
+  color: #32213A;
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
 }
@@ -514,6 +514,15 @@ header h2 {
 .skills .fa-solid {
   font-size: 2rem;
   color: #f3c490;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.skills .devicon:hover, .skills .devicon:focus,
+.skills .fa-solid:hover,
+.skills .fa-solid:focus {
+  color: #994636;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .projects {
@@ -554,7 +563,7 @@ header h2 {
   padding: 5% 0;
 }
 .projects .projectImg {
-  border: 3px solid #1f1e1f;
+  border: 3px solid #775253;
 }
 .projects a {
   padding: 5% 2.5%;
@@ -599,9 +608,9 @@ header h2 {
       flex-wrap: wrap;
   -ms-flex-line-pack: center;
       align-content: center;
-  border: 3px solid #f3c490;
-  -webkit-box-shadow: -10px 10px 0 #f3c490;
-          box-shadow: -10px 10px 0 #f3c490;
+  border: 3px solid #95F2D9;
+  -webkit-box-shadow: -10px 10px 0 #95F2D9;
+          box-shadow: -10px 10px 0 #95F2D9;
   background-color: #fff;
   margin: 2.5% 0;
   padding: 5% 0;
@@ -626,7 +635,7 @@ header h2 {
           box-shadow: none;
 }
 .contact button {
-  background-color: #f3c490;
+  background-color: #95F2D9;
   padding: 2.5%;
   width: 30%;
   border: 3px solid #fff;
