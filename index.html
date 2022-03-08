@@ -24,13 +24,9 @@
                 <a href="#home">
                     <h4>code-mich</h4>
                 </a>
-                <!-- NOTE: ADD SR READER ACCESSIBILITY -->
-                <label for="menu" class="sr-only">Navigation menu</label>
-                <button id="menu" aria-expanded="false">
-                    <span class="fa-solid fa-bars" aria-hidden="true"></span>
-                </button>
+
                 <ul class="hamburgerItems">
-                    <li class="mobileNavItem">
+                    <li class="mobileNavItem hide">
                         <a href="#about">
                             About
                         </a>
@@ -41,7 +37,7 @@
                         </a>
                     </li>
                     <li class="mobileNavItem">
-                        <a href="contact">
+                        <a href="#contact">
                             Contact
                         </a>
                     </li>
@@ -233,6 +229,18 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ipsa mollitia incidunt nihil
                         voluptates esse inventore nobis. Facilis eos, maiores deserunt dolores dolorum asperiores
                         nostrum sit alias nulla voluptas distinctio?</p>
+                    <ul class="professionalLinks">
+                        <li>
+                            <a href="">
+                                <span aria-hidden="true" class="devicon devicon-github-original"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span aria-hidden="true" class="devicon devicon-linkedin-plain"></span>
+                            </a>
+                        </li>
+                    </ul>
                 </div> <!-- end of .contactText -->
 
                 <form action="">
@@ -254,7 +262,9 @@
     </main>
     <!-- footer -->
     <footer>
-        <p>Designed and developed by Michelle Wong</p>
+        <p>
+            Made with <i class=" fa-solid fa-heart" aria-label="love"></i> by Michelle Wong
+        </p>
     </footer>
 
     <script src="scripts/app.js"></script>

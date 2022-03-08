@@ -5,6 +5,24 @@
         background-color: $white;
         border: 2px solid $mainBody;
     }
+    .professionalLinks {
+        @include flex(row);
+        justify-content: space-evenly;
+    }
+    a {
+        display: inline-block;
+    }
+    .devicon,
+    .fa-solid {
+        font-size: 2rem;
+        color: $subBody;
+        transition: all 0.5s ease;
+        &:hover,
+        &:focus {
+            color: $darkblue;
+            transform: scale(1.1);
+        }
+    }
 
     form {
         @include flex(column);
@@ -33,16 +51,16 @@
     button {
         color: $white;
         text-align: center;
-        background-color: $subBody;
+        background-color: $darkblue;
         padding: 2.5% 5%;
         margin: 2.5%;
-        border: 3px solid $subBody;
+        border: 2px solid $subBody;
         align-self: center;
         transition: all 0.5s;
         &:hover,
         &:focus {
             background-color: $white;
-            color: $subBody;
+            color: $darkblue;
         }
     }
 }

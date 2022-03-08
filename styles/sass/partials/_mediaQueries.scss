@@ -1,0 +1,99 @@
+@media (min-width: 400px) {
+    nav {
+        .hide {
+            display: inherit;
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    header {
+        margin-top: 10%;
+    }
+    nav .hamburgerItems {
+        width: 70%;
+        a {
+            font-size: $baseFontSize;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .skills {
+        .devicon,
+        .fasolid {
+            font-size: 3rem;
+        }
+        h4 {
+            font-size: $baseFontSize;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    nav {
+        padding: 1% 0;
+    }
+    header {
+        margin-top: 5%;
+    }
+    .about {
+        .aboutContainer {
+            @include flex(row);
+            justify-content: space-between;
+        }
+        .aboutIcon {
+            align-self: left;
+        }
+        .aboutText {
+            width: 70%;
+        }
+    }
+    .projects {
+        .projectItem {
+            @include flex(row);
+            justify-content: space-between;
+            &:nth-child(even) {
+                @include flex(row-reverse);
+            }
+        }
+        .projectImg {
+            width: 30%;
+            align-self: center;
+        }
+        .projectBlurb {
+            width: 60%;
+        }
+    }
+    .contact .wrapper {
+        @include flex(row-reverse);
+        justify-content: space-between;
+        .contactText {
+            width: 40%;
+            height: 400px;
+            align-self: center;
+        }
+
+        form {
+            width: 55%;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .subHead {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    nav .hamburgerItems a {
+        font-size: 1.2rem;
+    }
+    .skills li {
+        width: 20%;
+    }
+}

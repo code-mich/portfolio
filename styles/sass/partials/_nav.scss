@@ -6,6 +6,7 @@ nav {
     border-bottom: 2px solid $grey;
     z-index: 20;
     .mobileNavContainer,
+    .hamburgerItems,
     .navBar {
         @include flex(row);
     }
@@ -14,33 +15,24 @@ nav {
         justify-content: space-between;
         align-items: center;
     }
-    button {
-        padding: 2.5%;
-        border: none;
-        background-color: $white;
-        color: $subBody;
-        cursor: pointer;
-        width: 2rem;
-        height: 2rem;
-        border-radius: 20%;
-        transition: all 0.3s ease-in-out;
-        &:hover,
-        &:focus {
-            background-color: $taupe;
-            color: $white;
-        }
-    }
+    
     .hamburgerItems {
-        position: absolute;
-        bottom: -160%;
-        right: -100%;
-        display: block;
-        text-align: center;
+        width: 50%;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
         li {
-            background-color: rgba($color: $primary, $alpha: 0.6);
-            padding: 10%;
+            padding: 0 5%;
+        }
+        a {
+            letter-spacing: 0;
+            font-size: 0.8rem;
         }
     }
+
+    .hide {
+        display: none;
+    }
+
     a {
         display: block;
         padding: 2% 0;

@@ -362,6 +362,7 @@ footer {
 }
 footer p {
   color: white;
+  padding: 0;
 }
 
 body {
@@ -438,6 +439,7 @@ nav {
   z-index: 20;
 }
 nav .mobileNavContainer,
+nav .hamburgerItems,
 nav .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,32 +459,23 @@ nav .mobileNavContainer {
       -ms-flex-align: center;
           align-items: center;
 }
-nav button {
-  padding: 2.5%;
-  border: none;
-  background-color: #fff;
-  color: #1f1e1f;
-  cursor: pointer;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 20%;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-nav button:hover, nav button:focus {
-  background-color: #775253;
-  color: #fff;
-}
 nav .hamburgerItems {
-  position: absolute;
-  bottom: -160%;
-  right: -100%;
-  display: block;
-  text-align: center;
+  width: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 nav .hamburgerItems li {
-  background-color: rgba(1, 22, 56, 0.6);
-  padding: 10%;
+  padding: 0 5%;
+}
+nav .hamburgerItems a {
+  letter-spacing: 0;
+  font-size: 0.8rem;
+}
+nav .hide {
+  display: none;
 }
 nav a {
   display: block;
@@ -559,6 +552,7 @@ header .headerText {
 }
 
 .about {
+  padding-top: 10%;
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
   background-image: url("../assets/wave2.svg");
@@ -601,9 +595,9 @@ header .headerText {
   background-image: url("../assets/leaf.svg");
   background-repeat: no-repeat;
   position: absolute;
-  bottom: -10%;
+  bottom: -5%;
   right: 0;
-  height: 6rem;
+  height: 2.5rem;
   width: 100%;
   background-repeat: repeat-x;
   opacity: 0.3;
@@ -622,6 +616,7 @@ header .headerText {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 5%;
 }
 .skills li {
   display: -webkit-box;
@@ -649,7 +644,7 @@ header .headerText {
 .skills .devicon:hover, .skills .devicon:focus,
 .skills .fa-solid:hover,
 .skills .fa-solid:focus {
-  color: #775253;
+  color: #32213A;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -666,6 +661,7 @@ header .headerText {
       flex-wrap: wrap;
   -webkit-animation: fadeIn 1.5s;
           animation: fadeIn 1.5s;
+  padding-top: 10%;
 }
 .projects .projectLinks {
   display: -webkit-box;
@@ -702,14 +698,14 @@ header .headerText {
 }
 .projects a {
   color: #4e4c4e;
-  padding: 5% 2.5%;
+  padding: 4% 2.5%;
   text-transform: uppercase;
   border: 2px solid #1f1e1f;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .projects a:hover {
-  background-color: #4e4c4e;
+  background-color: #32213A;
   color: #fff;
   border: 2px solid #4e4c4e;
 }
@@ -721,6 +717,37 @@ header .headerText {
   padding: 5%;
   background-color: #fff;
   border: 2px solid #4e4c4e;
+}
+.contact .professionalLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.contact a {
+  display: inline-block;
+}
+.contact .devicon,
+.contact .fa-solid {
+  font-size: 2rem;
+  color: #1f1e1f;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.contact .devicon:hover, .contact .devicon:focus,
+.contact .fa-solid:hover,
+.contact .fa-solid:focus {
+  color: #32213A;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .contact form {
   display: -webkit-box;
@@ -760,10 +787,10 @@ header .headerText {
 .contact button {
   color: #fff;
   text-align: center;
-  background-color: #1f1e1f;
+  background-color: #32213A;
   padding: 2.5% 5%;
   margin: 2.5%;
-  border: 3px solid #1f1e1f;
+  border: 2px solid #1f1e1f;
   -ms-flex-item-align: center;
       align-self: center;
   -webkit-transition: all 0.5s;
@@ -771,5 +798,142 @@ header .headerText {
 }
 .contact button:hover, .contact button:focus {
   background-color: #fff;
-  color: #1f1e1f;
+  color: #32213A;
+}
+
+@media (min-width: 400px) {
+  nav .hide {
+    display: inherit;
+  }
+}
+@media (min-width: 500px) {
+  header {
+    margin-top: 10%;
+  }
+
+  nav .hamburgerItems {
+    width: 70%;
+  }
+  nav .hamburgerItems a {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 600px) {
+  .skills .devicon,
+.skills .fasolid {
+    font-size: 3rem;
+  }
+  .skills h4 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 800px) {
+  nav {
+    padding: 1% 0;
+  }
+
+  header {
+    margin-top: 5%;
+  }
+
+  .about .aboutContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about .aboutIcon {
+    -ms-flex-item-align: left;
+        align-self: left;
+  }
+  .about .aboutText {
+    width: 70%;
+  }
+
+  .projects .projectItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .projects .projectItem:nth-child(even) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .projects .projectImg {
+    width: 30%;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .projects .projectBlurb {
+    width: 60%;
+  }
+
+  .contact .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact .wrapper .contactText {
+    width: 40%;
+    height: 400px;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .contact .wrapper form {
+    width: 55%;
+  }
+}
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .subHead {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  nav .hamburgerItems a {
+    font-size: 1.2rem;
+  }
+
+  .skills li {
+    width: 20%;
+  }
 }

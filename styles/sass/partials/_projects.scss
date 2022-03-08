@@ -1,6 +1,7 @@
 .projects {
     @include flex(column);
     animation: fadeIn 1.5s;
+    padding-top: 10%;
 
     .projectLinks {
         @include flex(row);
@@ -16,19 +17,19 @@
     .projectImg {
         margin: 0 auto;
     }
-    
+
     .projectBlurb {
         margin: 5% 0;
     }
 
     a {
         color: $mainBody;
-        padding: 5% 2.5%;
+        padding: 4% 2.5%;
         text-transform: uppercase;
         border: 2px solid $subBody;
         transition: all 0.5s ease;
         &:hover {
-            background-color: $mainBody;
+            background-color: $darkblue;
             color: $white;
             border: 2px solid $mainBody;
         }
