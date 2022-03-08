@@ -1,6 +1,16 @@
 .skills {
     animation: fadeIn 1s;
-
+    position: relative;
+    &::after {
+        @include after('../assets/leaf.svg');
+        bottom: -10%;
+        right: 0;
+        height: 6rem;
+        width: 100%;
+        background-repeat: repeat-x;
+        opacity: 0.3;
+        z-index: -1;
+    }
     ul {
         @include flex(row);
         justify-content: space-between;
@@ -19,7 +29,7 @@
         transition: all 0.5s ease;
         &:hover,
         &:focus {
-            color: $burnt;
+            color: $taupe;
             transform: scale(1.1);
         }
     }

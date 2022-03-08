@@ -332,7 +332,7 @@ main {
 }
 
 section {
-  padding: 10% 0;
+  padding: 5% 0;
 }
 
 footer {
@@ -346,11 +346,12 @@ html {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .wrapper {
   max-width: 1200px;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -397,10 +398,17 @@ h2 {
   font-size: 1.5rem;
   letter-spacing: 1px;
   padding: 5%;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
 }
 
 h4 {
   font-size: 0.8rem;
+  padding: 2.5% 0;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 p {
@@ -409,9 +417,12 @@ p {
 }
 
 hr {
-  color: neutral;
-  width: 6rem;
-  margin-left: 1rem;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(#4e4c4e), to(#fff));
+  background: linear-gradient(to right, #fff, #4e4c4e, #fff);
+  border: 0;
+  height: 2px;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .subHead {
@@ -419,8 +430,12 @@ hr {
 }
 
 nav {
-  padding: 5% 0;
-  position: relative;
+  padding: 3.5% 0;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  border-bottom: 2px solid #ececec;
+  z-index: 20;
 }
 nav .mobileNavContainer,
 nav .navBar {
@@ -455,7 +470,7 @@ nav button {
   transition: all 0.3s ease-in-out;
 }
 nav button:hover, nav button:focus {
-  background-color: #e8c1c5ff;
+  background-color: #775253;
   color: #fff;
 }
 nav .hamburgerItems {
@@ -489,8 +504,6 @@ nav a:after {
   background-color: #1f1e1f;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
-  -webkit-animation: underline 1s;
-          animation: underline 1s;
 }
 nav a:hover:after, nav a:focus:after {
   -webkit-transform: translate3d(0, 0, 0);
@@ -502,6 +515,11 @@ nav a:hover:after, nav a:focus:after {
   display: none;
 }
 
+header {
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+  margin-top: 15%;
+}
 header .headerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -513,10 +531,14 @@ header .headerContainer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   overflow: hidden;
+  position: relative;
 }
-header .headerImg img {
+header img {
   width: 100%;
   height: auto;
+  opacity: 0.5;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 header .headerText {
   display: -webkit-box;
@@ -528,30 +550,20 @@ header .headerText {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 5% 0;
-  background-color: #ececec;
-}
-header .headerText h1 {
-  position: relative;
-}
-header .headerText span {
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  width: 100%;
   position: absolute;
-  height: 2.5rem;
-  width: 2.5rem;
-  -webkit-transform: rotate(10deg);
-          transform: rotate(10deg);
-}
-header h2 {
-  -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
+  bottom: -10%;
+  margin-left: 5%;
 }
 
 .about {
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
+  background-image: url("../assets/wave2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .about .aboutContainer {
   display: -webkit-box;
@@ -566,11 +578,36 @@ header h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.about .aboutIcon {
+  max-width: 25%;
+  padding: 5%;
+  border: 2px solid black;
+  border-radius: 50%;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .skills {
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
+  position: relative;
+}
+.skills::after {
+  content: "";
+  display: block;
+  background-image: url("../assets/leaf.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -10%;
+  right: 0;
+  height: 6rem;
+  width: 100%;
+  background-repeat: repeat-x;
+  opacity: 0.3;
+  z-index: -1;
 }
 .skills ul {
   display: -webkit-box;
@@ -612,7 +649,7 @@ header h2 {
 .skills .devicon:hover, .skills .devicon:focus,
 .skills .fa-solid:hover,
 .skills .fa-solid:focus {
-  color: #994636;
+  color: #775253;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -627,6 +664,8 @@ header h2 {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-animation: fadeIn 1.5s;
+          animation: fadeIn 1.5s;
 }
 .projects .projectLinks {
   display: -webkit-box;
@@ -653,8 +692,13 @@ header h2 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 5% 0;
-  -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
+  margin: 2.5% 0;
+}
+.projects .projectImg {
+  margin: 0 auto;
+}
+.projects .projectBlurb {
+  margin: 5% 0;
 }
 .projects a {
   color: #4e4c4e;
@@ -677,12 +721,6 @@ header h2 {
   padding: 5%;
   background-color: #fff;
   border: 2px solid #4e4c4e;
-}
-.contact hr {
-  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(#994636), to(#fff));
-  background: linear-gradient(to right, #fff, #994636, #fff);
-  border: 0;
-  height: 3px;
 }
 .contact form {
   display: -webkit-box;
@@ -708,7 +746,6 @@ header h2 {
   margin: 2.5% 0;
   border: none;
   border: 2px solid #ececec;
-  border-radius: 15px;
   background-color: #ececec;
 }
 .contact input:focus,
@@ -725,6 +762,7 @@ header h2 {
   text-align: center;
   background-color: #1f1e1f;
   padding: 2.5% 5%;
+  margin: 2.5%;
   border: 3px solid #1f1e1f;
   -ms-flex-item-align: center;
       align-self: center;

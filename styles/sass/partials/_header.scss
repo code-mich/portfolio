@@ -1,32 +1,27 @@
 header {
+    animation: fadeIn 1s;
+    margin-top: 15%;
     .headerContainer{
         @include flex(column);
         overflow: hidden;
+        position: relative;
     }
-    .headerImg {
+
         img {
             width: 100%;
             height: auto;
+            opacity: 0.5;
+            object-fit: cover;
         }
-    }
+    
     .headerText {
         @include flex(column);
-        justify-content: center;
-        padding: 5% 0;
-        background-color: $grey;
-        h1 {
-            position: relative;
-        }
-        span {
-            position: absolute;
-            height: 2.5rem;
-            width: 2.5rem;
-            transform: rotate(10deg);
-        }
+        align-content: flex-start;
+        width: 100%;
+        position: absolute;
+        bottom: -10%;
+        margin-left: 5%;
     }
 
 
-    h2 {
-        animation: fadeIn 1s;
-    }
 }

@@ -37,7 +37,7 @@ main {
 }
 
 section {
-    padding: 10% 0;
+    padding: 5% 0;
 }
 
 footer {
@@ -50,11 +50,12 @@ html {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 .wrapper {
     max-width: 1200px;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 }
 

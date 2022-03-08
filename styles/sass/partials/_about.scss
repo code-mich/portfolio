@@ -1,7 +1,18 @@
 .about {
     animation: fadeIn 1s;
+    background-image: url('../assets/wave2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     .aboutContainer {
         @include flex(column);
         justify-content: center;
+        align-content: center;
+    }
+    .aboutIcon {
+        max-width: 25%;
+        padding: 5%;
+        border: 2px solid black;
+        border-radius: 50%;
+        align-self: center;
     }
 }

@@ -1,6 +1,10 @@
 nav {
-    padding: 5% 0;
-    position: relative;
+    padding: 3.5% 0;
+    width: 100%;
+    background-color: $white;
+    position: fixed;
+    border-bottom: 2px solid $grey;
+    z-index: 20;
     .mobileNavContainer,
     .navBar {
         @include flex(row);
@@ -22,7 +26,7 @@ nav {
         transition: all 0.3s ease-in-out;
         &:hover,
         &:focus {
-            background-color: $quinary;
+            background-color: $taupe;
             color: $white;
         }
     }
@@ -54,7 +58,6 @@ nav {
             height: 3px;
             background-color: $subBody;
             transition: all 0.8s;
-            animation: underline 1s
         }
         &:hover,
         &:focus {

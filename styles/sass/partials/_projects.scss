@@ -1,5 +1,6 @@
 .projects {
     @include flex(column);
+    animation: fadeIn 1.5s;
 
     .projectLinks {
         @include flex(row);
@@ -9,7 +10,15 @@
     .projectItem {
         @include flex(column);
         padding: 5% 0;
-        animation: fadeIn 1s;
+        margin: 2.5% 0;
+    }
+    
+    .projectImg {
+        margin: 0 auto;
+    }
+    
+    .projectBlurb {
+        margin: 5% 0;
     }
 
     a {
