@@ -1,6 +1,4 @@
 nav {
-    background-color: $darkblue;
-    color: $white;
     padding: 5% 0;
     position: relative;
     .mobileNavContainer,
@@ -15,8 +13,8 @@ nav {
     button {
         padding: 2.5%;
         border: none;
-        background-color: $quinary;
-        color: $white;
+        background-color: $white;
+        color: $subBody;
         cursor: pointer;
         width: 2rem;
         height: 2rem;
@@ -24,8 +22,8 @@ nav {
         transition: all 0.3s ease-in-out;
         &:hover,
         &:focus {
-            background-color: $white;
-            color: $quinary;
+            background-color: $quinary;
+            color: $white;
         }
     }
     .hamburgerItems {
@@ -39,8 +37,32 @@ nav {
             padding: 10%;
         }
     }
-    a, h4 {
-        color: $white;
+    a {
+        display: block;
+        padding: 2% 0;
+        color: $subBody;
+        overflow: hidden;
+        position: relative;
+        &:after {
+            content: '';
+            opacity: 0;
+            transform: translate3d(-100%, 0, 0);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: $subBody;
+            transition: all 0.8s;
+            animation: underline 1s
+        }
+        &:hover,
+        &:focus {
+            &:after{
+                transform: translate3d(0, 0, 0);   
+                opacity: 1;
+            }
+        }
     }
 
 }

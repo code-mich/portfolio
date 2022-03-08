@@ -1,20 +1,32 @@
 header {
-    padding: 10% 0;
-    h1 {
-        position: relative;
-        animation: fadeIn 1s;
-        &::after {
-            @include after("../assets/light-bulb-svgrepo-com.svg");
-
-            left: 82%;
-            top: 25%;
-            width: 80%;
-            height: 80%;
+    .headerContainer{
+        @include flex(column);
+        overflow: hidden;
+    }
+    .headerImg {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .headerText {
+        @include flex(column);
+        justify-content: center;
+        padding: 5% 0;
+        background-color: $grey;
+        h1 {
+            position: relative;
+        }
+        span {
+            position: absolute;
+            height: 2.5rem;
+            width: 2.5rem;
             transform: rotate(10deg);
         }
     }
+
+
     h2 {
-        color: $darkblue;
         animation: fadeIn 1s;
     }
 }

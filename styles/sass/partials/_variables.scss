@@ -11,7 +11,7 @@ $quinary: #e8c1c5ff;
 
 $orangey: #f3c490;
 
-$mainBody: #8a7967;
+$mainBody: #4e4c4e;
 $subBody: #1f1e1f;
 $grey: #ececec;
 $neutral: #a69893;
@@ -25,9 +25,10 @@ $burnt: #994636;
 
 // fonts
 
-$headingFont: "Bitter", serif;
+$headingFont: "Raleway", serif;
 $subheadFont: "Roboto", sans-serif;
 $bodyFont: "Nunito", sans-serif;
+$buttonFont: "Hubballi", sans-serif;
 
 $baseFontSize: 1rem;
 
@@ -54,6 +55,7 @@ $baseFontSize: 1rem;
 	position: absolute;
 }
 
+
 // animations
 
 @keyframes fadeIn {
@@ -61,6 +63,23 @@ $baseFontSize: 1rem;
 		opacity: 0;
 	}
 	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes underline {
+	0% {
+		opacity: 0;
+		transform: translate3d(-100%, 0, 0);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: $subBody;
+	}
+	100% {
+		transform: translate3d(0, 0, 0);   
 		opacity: 1;
 	}
 }

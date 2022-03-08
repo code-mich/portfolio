@@ -21,3 +21,17 @@
     //         background-color: rgba($color: $primary, $alpha: 0.5);
     //     }
     // }
+
+    h1 {
+        position: relative;
+        animation: fadeIn 1s;
+        &::after {
+            @include after("../assets/light-bulb-svgrepo-com.svg");
+
+            left: 82%;
+            top: 25%;
+            width: 80%;
+            height: 80%;
+            transform: rotate(10deg);
+        }
+    }

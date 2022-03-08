@@ -1,5 +1,5 @@
 .about {
-    
+    animation: fadeIn 1s;
     .aboutContainer {
         @include flex(column);
         justify-content: center;
