@@ -438,47 +438,8 @@ nav {
   border-bottom: 2px solid #ececec;
   z-index: 20;
 }
-nav .mobileNavContainer,
-nav .hamburgerItems,
-nav .navBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-nav .mobileNavContainer {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-nav .hamburgerItems {
-  width: 50%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
-nav .hamburgerItems li {
-  padding: 0 5%;
-}
-nav .hamburgerItems a {
-  letter-spacing: 0;
-  font-size: 0.8rem;
-}
-nav .hide {
-  display: none;
-}
 nav a {
-  display: block;
+  display: inline-block;
   padding: 2% 0;
   color: #1f1e1f;
   overflow: hidden;
@@ -502,6 +463,101 @@ nav a:hover:after, nav a:focus:after {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   opacity: 1;
+}
+nav .mobileNavContainer,
+nav .navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+nav .mobileNavContainer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+nav .hamburgerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: fixed;
+  -webkit-transform: translateX(300%);
+          transform: translateX(300%);
+  -webkit-transition: -webkit-transform 0.6s linear;
+  transition: -webkit-transform 0.6s linear;
+  transition: transform 0.6s linear;
+  transition: transform 0.6s linear, -webkit-transform 0.6s linear;
+  top: 0;
+  right: 0;
+  background-color: #ececec;
+  width: 100%;
+  text-align: center;
+  margin-top: calc(1rem + 12%);
+  z-index: 20;
+}
+nav .hamburgerMenu li {
+  padding: 5%;
+}
+a nav .hamburgerMenu:after {
+  height: 1.5px;
+}
+nav ul.showMenu {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+nav button {
+  position: relative;
+  right: 0;
+  width: 50px;
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+nav .bar {
+  display: block;
+  width: 60%;
+  height: 4px;
+  background-color: #1f1e1f;
+  border-radius: 5px;
+  margin: 0 auto 7.5%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+nav .barOne, nav .barThree {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+nav .barTwo {
+  opacity: 1;
+}
+nav .open .barOne {
+  -webkit-transform: rotate(45deg) translateY(-5px) translateX(-2.5px);
+          transform: rotate(45deg) translateY(-5px) translateX(-2.5px);
+}
+nav .open .barTwo {
+  opacity: 0;
+}
+nav .open .barThree {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .desktopNav {
@@ -588,20 +644,6 @@ header .headerText {
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
   position: relative;
-}
-.skills::after {
-  content: "";
-  display: block;
-  background-image: url("../assets/leaf.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  bottom: -5%;
-  right: 0;
-  height: 2.5rem;
-  width: 100%;
-  background-repeat: repeat-x;
-  opacity: 0.3;
-  z-index: -1;
 }
 .skills ul {
   display: -webkit-box;
@@ -801,11 +843,6 @@ header .headerText {
   color: #32213A;
 }
 
-@media (min-width: 400px) {
-  nav .hide {
-    display: inherit;
-  }
-}
 @media (min-width: 500px) {
   header {
     margin-top: 10%;

@@ -1,16 +1,16 @@
 .skills {
     animation: fadeIn 1s;
     position: relative;
-    &::after {
-        @include after('../assets/leaf.svg');
-        bottom: -5%;
-        right: 0;
-        height: 2.5rem;
-        width: 100%;
-        background-repeat: repeat-x;
-        opacity: 0.3;
-        z-index: -1;
-    }
+    // &::after {
+    //     @include after('../assets/leaf.svg');
+    //     bottom: -5%;
+    //     right: 0;
+    //     height: 2.5rem;
+    //     width: 100%;
+    //     background-repeat: repeat-x;
+    //     opacity: 0.3;
+    //     z-index: -1;
+    // }
     ul {
         @include flex(row);
         justify-content: space-between;
