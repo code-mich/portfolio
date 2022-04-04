@@ -738,7 +738,10 @@ header .headerText {
 .projects .projectBlurb {
   margin: 5% 0;
 }
-.projects a {
+.projects .projectSkills {
+  text-transform: uppercase;
+}
+.projects .projectLink {
   color: #4e4c4e;
   padding: 4% 2.5%;
   text-transform: uppercase;
@@ -746,7 +749,7 @@ header .headerText {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.projects a:hover {
+.projects .projectLink:hover {
   background-color: #32213A;
   color: #fff;
   border: 2px solid #4e4c4e;

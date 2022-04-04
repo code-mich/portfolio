@@ -22,7 +22,11 @@
         margin: 5% 0;
     }
 
-    a {
+    .projectSkills {
+        text-transform: uppercase;
+    }
+
+    .projectLink {
         color: $mainBody;
         padding: 4% 2.5%;
         text-transform: uppercase;
