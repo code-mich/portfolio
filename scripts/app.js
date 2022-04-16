@@ -2,8 +2,8 @@ const app = {};
 
 // toggle hamburger menu
 app.toggleHamburger = () => {
-    const menu = document.querySelector('.hamburgerMenu');
-    const menuItem = document.querySelector('.hamburgerItem')
+    const menu = document.querySelector('.menu');
+    const menuItem = document.querySelector('.menuItem')
     const button = document.querySelector('.hamburgerButton')
 
     button.addEventListener('click', () => {

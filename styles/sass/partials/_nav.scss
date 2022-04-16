@@ -33,18 +33,17 @@ nav {
         }
     }
 
-    .mobileNavContainer,
-    .navBar,
-    .desktopNavContainer {
+    .navContainer,
+    .navBar {
         @include flex(row);
     }
 
-    .mobileNavContainer {
+    .navContainer {
         justify-content: space-between;
         position: relative;
     }
 
-    .hamburgerMenu {
+    .menu {
         @include flex(column);
         position: fixed;
         transform: translateX(150%);
@@ -69,7 +68,7 @@ nav {
         transform: translateX(0);
     }
 
-    button {
+    .hamburgerButton {
         position: relative;
         right: 0;
         width: 50px;
@@ -116,20 +115,31 @@ nav {
 
     }
 
-.desktopNav {
-    display: none;
-    .desktopNavContainer {
-        justify-content: space-between;
-    }
-}
 
 // MEDIA QUERIES
 
 @media (min-width: 650px) {
-    nav.mobileNav {
-        display: none;
-    }
-    nav.desktopNav {
-        display: block;
+    nav {
+        a {
+            padding: 0;
+        }
+        .hamburgerButton {
+            display: none;
+        }
+        .menu {
+            @include flex(row);
+            position: static;
+            transform: none;
+            background-color: inherit;
+            justify-content: flex-end;
+            width: 75%;
+            margin-top: 0;
+            li {
+                padding: 0 5%;
+            }
+        }
+        .homeLink {
+            padding: 0;
+        }
     }
 }
