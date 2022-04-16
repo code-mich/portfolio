@@ -57,28 +57,28 @@
 
     <nav class="desktopNav">
         <div class="wrapper">
-            <ul class="navBar">
-                <li class="navItem">
-                    <a href="#home">
-                        <p>Home</p>
-                    </a>
-                </li>
-                <li class="navItem">
-                    <a href="#about">
-                        <p>About</p>
-                    </a>
-                </li>
-                <li class="navItem">
-                    <a href="#projects">
-                        <p>Projects</p>
-                    </a>
-                </li>
-                <li class="navItem">
-                    <a href="#contact">
-                        <p>Contact</p>
-                    </a>
-                </li>
-            </ul>
+            <div class="desktopNavContainer">
+                <a href="#home">
+                    <h4>code-mich</h4>
+                </a>
+                <ul class="navBar">
+                    <li class="navItem">
+                        <a href="#about">
+                            <p>About</p>
+                        </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#projects">
+                            <p>Projects</p>
+                        </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#contact">
+                            <p>Contact</p>
+                        </a>
+                    </li>
+                </ul>
+            </div> <!-- end of .desktopNavContainer -->
         </div> <!-- end of .wrapper -->
     </nav>
     <!-- END OF DESKTOP NAV -->
@@ -106,12 +106,15 @@
                     <div class="aboutText">
                         <h2>Hi there!</h2>
                         <hr>
-                        <p>I'm a front-end web developer with a love for building clean and accessible web applications.
-                            I recently graduated from Juno College Web Development Immersive and am excited to continue
-                            honing my skills.
+                        <p> Hey there, I'm Michelle 👋 <br>
 
-                            Prior to transitioning to web development, I graduated from the Univeristy of Toronto with a
-                            Bachelor's of Science.
+                            I’m a front end developer who builds apps that look and feel beautiful. I strive to deliver
+                            products that have a terrific user experience, are responsive, and are accessible to as many
+                            people as possible while also delivering clean and reusable code! <br>
+
+                            I’m a lifelong learner who loves a challenge and thrives in both individual and group
+                            settings. I'm looking to bring my positivity, creativity, and resourcefulness to the right
+                            team!
                         </p>
                     </div> <!-- end of .aboutText -->
                 </div> <!-- end of .aboutContainer -->
@@ -261,7 +264,7 @@
                     </ul>
                 </div> <!-- end of .contactText -->
 
-                <form action="">
+                <form method="POST" data-netlify="true">
                     <label for="name" class="sr-only">Name</label>
                     <input type="text" id="name" class="name" placeholder="Name" required>
 

@@ -30,7 +30,7 @@
         transition: all 0.5s ease;
         &:hover,
         &:focus {
-            color: $darkblue;
+            color: $accent;
             transform: scale(1.1);
         }
     }

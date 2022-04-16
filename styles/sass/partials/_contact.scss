@@ -19,7 +19,7 @@
         transition: all 0.5s ease;
         &:hover,
         &:focus {
-            color: $darkblue;
+            color: $accent;
             transform: scale(1.1);
         }
     }
@@ -51,7 +51,7 @@
     button {
         color: $white;
         text-align: center;
-        background-color: $darkblue;
+        background-color: $accent;
         padding: 2.5% 5%;
         margin: 2.5%;
         border: 2px solid $subBody;
@@ -60,7 +60,7 @@
         &:hover,
         &:focus {
             background-color: $white;
-            color: $darkblue;
+            color: $accent;
         }
     }
 }

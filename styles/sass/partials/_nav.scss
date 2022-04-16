@@ -8,7 +8,7 @@ nav {
 
     a {
         display: inline-block;
-        padding: 2% 0;
+        padding: 5% 0;
         color: $subBody;
         overflow: hidden;
         position: relative;
@@ -34,7 +34,8 @@ nav {
     }
 
     .mobileNavContainer,
-    .navBar {
+    .navBar,
+    .desktopNavContainer {
         @include flex(row);
     }
 
@@ -46,15 +47,15 @@ nav {
     .hamburgerMenu {
         @include flex(column);
         position: fixed;
-        transform: translateX(300%);
-        transition: transform 0.6s linear;
+        transform: translateX(150%);
+        transition: transform 0.5s linear;
         top: 0;
         right: 0;
         background-color: $grey;
         width: 100%;
         text-align: center;
         // position margins according to h4 font-size + padding
-        margin-top: calc(1rem + 12%);
+        margin-top: calc(1rem + 11%);
         z-index: 20;
         li {
             padding: 5%;
@@ -77,9 +78,9 @@ nav {
         border: none;
         box-shadow: none;
         transition: all 0.5s;
-        // &:hover, &:focus {
-        //     transform: scale(1.1);
-        // }
+        &:hover, &:focus {
+            transform: scale(1.1);
+        }
     }
 
     .bar {
@@ -117,5 +118,18 @@ nav {
 
 .desktopNav {
     display: none;
+    .desktopNavContainer {
+        justify-content: space-between;
+    }
 }
 
+// MEDIA QUERIES
+
+@media (min-width: 650px) {
+    nav.mobileNav {
+        display: none;
+    }
+    nav.desktopNav {
+        display: block;
+    }
+}

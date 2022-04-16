@@ -440,7 +440,7 @@ nav {
 }
 nav a {
   display: inline-block;
-  padding: 2% 0;
+  padding: 5% 0;
   color: #1f1e1f;
   overflow: hidden;
   position: relative;
@@ -465,7 +465,8 @@ nav a:hover:after, nav a:focus:after {
   opacity: 1;
 }
 nav .mobileNavContainer,
-nav .navBar {
+nav .navBar,
+nav .desktopNavContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,18 +494,18 @@ nav .hamburgerMenu {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: fixed;
-  -webkit-transform: translateX(300%);
-          transform: translateX(300%);
-  -webkit-transition: -webkit-transform 0.6s linear;
-  transition: -webkit-transform 0.6s linear;
-  transition: transform 0.6s linear;
-  transition: transform 0.6s linear, -webkit-transform 0.6s linear;
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
   top: 0;
   right: 0;
   background-color: #ececec;
   width: 100%;
   text-align: center;
-  margin-top: calc(1rem + 12%);
+  margin-top: calc(1rem + 11%);
   z-index: 20;
 }
 nav .hamburgerMenu li {
@@ -528,6 +529,10 @@ nav button {
           box-shadow: none;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+nav button:hover, nav button:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 nav .bar {
   display: block;
@@ -563,7 +568,21 @@ nav .open .barThree {
 .desktopNav {
   display: none;
 }
+.desktopNav .desktopNavContainer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 
+@media (min-width: 650px) {
+  nav.mobileNav {
+    display: none;
+  }
+
+  nav.desktopNav {
+    display: block;
+  }
+}
 header {
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
@@ -849,13 +868,6 @@ header .headerText {
 @media (min-width: 500px) {
   header {
     margin-top: 10%;
-  }
-
-  nav .hamburgerItems {
-    width: 70%;
-  }
-  nav .hamburgerItems a {
-    font-size: 1rem;
   }
 }
 @media (min-width: 600px) {

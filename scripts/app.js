@@ -7,9 +7,6 @@ app.toggleHamburger = () => {
     const button = document.querySelector('.hamburgerButton')
 
     button.addEventListener('click', () => {
-        console.log('button is clicked')
-        console.log(menu.classList)
-        console.log(button.classList)
         if (menu.classList.contains('showMenu')) {
             menu.classList.remove('showMenu');
             menuItem.classList.remove('showMenu');
@@ -24,7 +21,6 @@ app.toggleHamburger = () => {
 }
 
 app.init = () => {
-    console.log('app initialized');
     app.toggleHamburger();
 }
 
