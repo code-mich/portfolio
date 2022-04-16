@@ -414,7 +414,7 @@ h4 {
 
 p {
   font-size: 1rem;
-  padding: 5% 0;
+  padding: 2.5% 0;
 }
 
 hr {
@@ -464,6 +464,9 @@ nav a:hover:after, nav a:focus:after {
           transform: translate3d(0, 0, 0);
   opacity: 1;
 }
+nav .menuItem > a:after {
+  height: 2px;
+}
 nav .navContainer,
 nav .navBar {
   display: -webkit-box;
@@ -504,7 +507,7 @@ nav .menu {
   background-color: #ececec;
   width: 100%;
   text-align: center;
-  margin-top: calc(1rem + 11%);
+  margin-top: calc(1rem + 12%);
   z-index: 20;
 }
 nav .menu li {
@@ -774,6 +777,7 @@ header .headerText {
 }
 .projects .projectSkills {
   text-transform: uppercase;
+  text-align: center;
 }
 .projects .projectLink {
   color: #4e4c4e;

@@ -32,6 +32,12 @@ nav {
             }
         }
     }
+    
+    .menuItem > a {
+        &:after {
+            height: 2px;
+        }
+    }
 
     .navContainer,
     .navBar {
@@ -54,7 +60,7 @@ nav {
         width: 100%;
         text-align: center;
         // position margins according to h4 font-size + padding
-        margin-top: calc(1rem + 11%);
+        margin-top: calc(1rem + 12%);
         z-index: 20;
         li {
             padding: 5%;
