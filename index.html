@@ -12,13 +12,14 @@
         href="https://fonts.googleapis.com/css2?family=Bitter&family=Hubballi&family=Nunito:wght@400;600&family=Raleway:wght@300;400&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/f2dd5a1fe8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
     <!-- nav  -->
-    <nav class="mainNav">
+    <nav class="mainNav" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000">
         <div class="wrapper">
             <div class="navContainer">
                 <a href="#home" class="homeLink">
@@ -56,7 +57,7 @@
     <!-- END OF NAVIGATION -->
 
     <!-- landing -->
-    <header id="home" class="home">
+    <header id="home" class="home" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000">
         <div class="headerContainer">
 
             <img src="./assets/cookie.jpg" alt="">
@@ -71,7 +72,7 @@
 
     <main>
         <!-- about -->
-        <section id="about" class="about">
+        <section id="about" class="about" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000">
             <div class="wrapper">
                 <div class="aboutContainer">
                     <span class="aboutIcon" aria-hidden="true"><img src="./assets/dog-svgrepo-com.svg" alt=""></span>
@@ -85,7 +86,7 @@
                         </p>
 
                         <p>
-                            Prior to my transition into software development, I studied life sciences at the University
+                            Prior to transitioning into software development, I studied life sciences at the University
                             of Toronto. I leverage my research and analytical skills to thoughtfully decompose problems
                             and deal with any ambiguity along the way. I value myself as a lifelong learner who loves a
                             challenge and thrives in both individual and group
@@ -105,7 +106,7 @@
 
         <!-- skills -->
 
-        <section id="skills" class="skills">
+        <section id="skills" class="skills" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000">
             <div class="wrapper">
                 <h2>My toolkit</h2>
 
@@ -155,12 +156,12 @@
         </section>
 
         <!-- projects -->
-        <section id="projects" class="projects">
+        <section id="projects" class="projects" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000">
             <div class="wrapper">
                 <h2>Projects</h2>
 
                 <ul class="projectList">
-                    <li class="projectItem">
+                    <li class="projectItem" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000">
                         <div class="projectImg">
                             <img src="./assets/p4-mockup.png" alt="screenshot of trivia time home page desktop view">
                         </div> <!-- end of first .projectImg -->
@@ -178,7 +179,7 @@
                         </div> <!-- end of first .projectBlurb -->
                     </li>
 
-                    <li class="projectItem">
+                    <li class="projectItem" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000">
                         <div class="projectImg">
                             <img src="./assets/p3-markup.png" alt="screenshot of Dogcademy homepage mobile view">
                         </div> <!-- end of second .projectImg -->
@@ -195,7 +196,7 @@
                         </div> <!-- end of second .projectBlurb -->
                     </li>
 
-                    <li class="projectItem">
+                    <li class="projectItem" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000">
                         <div class="projectImg">
                             <img src="./assets/p2-markup.png" alt="screenshot of Critterpedia home page tablet view">
                         </div> <!-- end of third .projectImg -->
@@ -218,13 +219,13 @@
         </section>
 
         <!-- contact -->
-        <section id="contact" class="contact">
+        <section id="contact" class="contact" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000">
             <div class="wrapper">
                 <div class="contactText">
                     <h2>Let's chat!</h2>
 
                     <p>Thanks for stopping by! If you'd like to hear more about what I can bring to a team, feel free to
-                        contact me through the links below Looking forward to chatting with you!</p>
+                        contact me through the links below. Looking forward to chatting with you!</p>
                     <ul class="professionalLinks">
                         <li>
                             <p class="sr-only">GitHub</p>
@@ -272,6 +273,11 @@
     </footer>
 
     <script src="scripts/app.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

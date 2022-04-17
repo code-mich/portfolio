@@ -1,5 +1,5 @@
 .skills {
-    animation: fadeIn 1s;
+    // animation: fadeIn 1s;
     position: relative;
     // &::after {
     //     @include after('../assets/leaf.svg');
@@ -14,7 +14,6 @@
     ul {
         @include flex(row);
         justify-content: space-between;
-        padding-top: 5%;
     }
     li {
         @include flex(column);
@@ -33,5 +32,24 @@
             color: $accent;
             transform: scale(1.1);
         }
+    }
+}
+
+@media (min-width: 600px) {
+
+    .skills {
+        .devicon,
+        .fasolid {
+            font-size: 3rem;
+        }
+        h4 {
+            font-size: $baseFontSize;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .skills li {
+        width: 20%;
     }
 }

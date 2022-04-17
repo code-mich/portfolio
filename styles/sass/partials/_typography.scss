@@ -31,7 +31,7 @@ h1 {
 h2 {
     font-size: 1.5rem;
     letter-spacing: 1px;
-    padding: 5%;
+    padding-top: 3.5%;
     text-align: center;
 }
 
@@ -61,4 +61,16 @@ hr {
 
 .subHead {
     font-size: $baseFontSize;
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .subHead {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
 }

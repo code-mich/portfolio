@@ -1,6 +1,6 @@
 .about {
     padding-top: 10%;
-    animation: fadeIn 1s;
+    // animation: fadeIn 1s;
     background-image: url('../assets/wave2.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,4 +16,19 @@
         border-radius: 50%;
         align-self: center;
     }
+}
+
+@media (min-width: 800px) {
+    .about {
+        .aboutContainer {
+            @include flex(row);
+            justify-content: space-between;
+        }
+        .aboutIcon {
+            align-self: left;
+        }
+        .aboutText {
+            width: 70%;
+        }
+}
 }

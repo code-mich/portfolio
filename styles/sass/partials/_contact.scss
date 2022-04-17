@@ -9,11 +9,10 @@
         @include flex(row);
         justify-content: space-evenly;
     }
+
+    // contact icons
     a {
         display: inline-block;
-    }
-    .devicon,
-    .fa-solid {
         font-size: 2rem;
         color: $subBody;
         transition: all 0.5s ease;
@@ -62,5 +61,12 @@
             background-color: $white;
             color: $accent;
         }
+    }
+}
+
+@media (min-width: 700px) {
+    .contact .contactText {
+        width: 75%;
+        margin: 0 auto;
     }
 }

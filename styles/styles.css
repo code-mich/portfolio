@@ -332,7 +332,7 @@ main {
 }
 
 section {
-  padding: 5% 0;
+  padding: 2% 0;
 }
 
 footer {
@@ -398,7 +398,7 @@ h1 {
 h2 {
   font-size: 1.5rem;
   letter-spacing: 1px;
-  padding: 5%;
+  padding-top: 3.5%;
   text-align: center;
 }
 
@@ -430,6 +430,19 @@ hr {
   font-size: 1rem;
 }
 
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .subHead {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+}
 nav {
   padding: 3.5% 0;
   width: 100%;
@@ -440,7 +453,6 @@ nav {
 }
 nav a {
   display: inline-block;
-  padding: 5% 0;
   color: #1f1e1f;
   overflow: hidden;
   position: relative;
@@ -507,7 +519,7 @@ nav .menu {
   background-color: #ececec;
   width: 100%;
   text-align: center;
-  margin-top: calc(1rem + 12%);
+  margin-top: calc(1rem + 8%);
   z-index: 20;
 }
 nav .menu li {
@@ -601,10 +613,13 @@ nav .open .barThree {
     padding: 0;
   }
 }
+@media (min-width: 1000px) {
+  nav .menuItem a {
+    font-size: 1.2rem;
+  }
+}
 header {
-  -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
-  margin-top: 15%;
+  margin-top: 13%;
 }
 header .headerContainer {
   display: -webkit-box;
@@ -640,14 +655,22 @@ header .headerText {
       align-content: flex-start;
   width: 100%;
   position: absolute;
-  bottom: -10%;
+  bottom: 5%;
   margin-left: 5%;
 }
 
+@media (min-width: 500px) {
+  header {
+    margin-top: 10%;
+  }
+}
+@media (min-width: 800px) {
+  header {
+    margin-top: 5%;
+  }
+}
 .about {
   padding-top: 10%;
-  -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
   background-image: url("../assets/wave2.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -677,9 +700,30 @@ header .headerText {
       align-self: center;
 }
 
+@media (min-width: 800px) {
+  .about .aboutContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about .aboutIcon {
+    -ms-flex-item-align: left;
+        align-self: left;
+  }
+  .about .aboutText {
+    width: 70%;
+  }
+}
 .skills {
-  -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
   position: relative;
 }
 .skills ul {
@@ -695,7 +739,6 @@ header .headerText {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 5%;
 }
 .skills li {
   display: -webkit-box;
@@ -728,6 +771,20 @@ header .headerText {
           transform: scale(1.1);
 }
 
+@media (min-width: 600px) {
+  .skills .devicon,
+.skills .fasolid {
+    font-size: 3rem;
+  }
+  .skills h4 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1000px) {
+  .skills li {
+    width: 20%;
+  }
+}
 .projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -738,9 +795,6 @@ header .headerText {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-animation: fadeIn 1.5s;
-          animation: fadeIn 1.5s;
-  padding-top: 10%;
 }
 .projects .projectLinks {
   display: -webkit-box;
@@ -752,9 +806,9 @@ header .headerText {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .projects .projectItem {
   display: -webkit-box;
@@ -766,8 +820,7 @@ header .headerText {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 5% 0;
-  margin: 2.5% 0;
+  padding: 2.5% 0;
 }
 .projects .projectImg {
   margin: 0 auto;
@@ -780,19 +833,56 @@ header .headerText {
   text-align: center;
 }
 .projects .projectLink {
-  color: #4e4c4e;
-  padding: 4% 2.5%;
+  color: #fff;
+  background-color: #32213A;
+  padding: 3% 2%;
   text-transform: uppercase;
   border: 2px solid #1f1e1f;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  margin: 0 1%;
 }
 .projects .projectLink:hover {
-  background-color: #32213A;
-  color: #fff;
+  background-color: #fff;
+  color: #4e4c4e;
   border: 2px solid #4e4c4e;
 }
 
+@media (min-width: 800px) {
+  .projects .projectItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .projects .projectItem:nth-child(even) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .projects .projectImg {
+    width: 30%;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .projects .projectBlurb {
+    width: 60%;
+  }
+}
 .contact {
   background-image: url("../assets/i-like-food.svg");
 }
@@ -817,17 +907,12 @@ header .headerText {
 }
 .contact a {
   display: inline-block;
-}
-.contact .devicon,
-.contact .fa-solid {
   font-size: 2rem;
   color: #1f1e1f;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.contact .devicon:hover, .contact .devicon:focus,
-.contact .fa-solid:hover,
-.contact .fa-solid:focus {
+.contact a:hover, .contact a:focus {
   color: #32213A;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -884,107 +969,9 @@ header .headerText {
   color: #32213A;
 }
 
-@media (min-width: 500px) {
-  header {
-    margin-top: 10%;
-  }
-}
-@media (min-width: 600px) {
-  .skills .devicon,
-.skills .fasolid {
-    font-size: 3rem;
-  }
-  .skills h4 {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 800px) {
-  header {
-    margin-top: 5%;
-  }
-
-  .about .aboutContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .about .aboutIcon {
-    -ms-flex-item-align: left;
-        align-self: left;
-  }
-  .about .aboutText {
-    width: 70%;
-  }
-
-  .projects .projectItem {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .projects .projectItem:nth-child(even) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .projects .projectImg {
-    width: 30%;
-    -ms-flex-item-align: center;
-        align-self: center;
-  }
-  .projects .projectBlurb {
-    width: 60%;
-  }
-
-  .contact .wrapper .contactText {
-    width: 40%;
-    height: 400px;
-    -ms-flex-item-align: center;
-        align-self: center;
+@media (min-width: 700px) {
+  .contact .contactText {
+    width: 75%;
     margin: 0 auto;
-  }
-}
-@media (min-width: 1000px) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  .subHead {
-    font-size: 1.5rem;
-  }
-
-  h4 {
-    font-size: 1.2rem;
-  }
-
-  nav .hamburgerItems a {
-    font-size: 1.2rem;
-  }
-
-  .skills li {
-    width: 20%;
   }
 }
