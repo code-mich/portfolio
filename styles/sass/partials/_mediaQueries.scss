@@ -51,17 +51,18 @@
         }
     }
     .contact .wrapper {
-        @include flex(row-reverse);
-        justify-content: space-between;
+        // @include flex(row-reverse);
+        // justify-content: space-between;
         .contactText {
             width: 40%;
             height: 400px;
             align-self: center;
+            margin: 0 auto;
         }
 
-        form {
-            width: 55%;
-        }
+        // form {
+        //     width: 55%;
+        // }
     }
 }
 
