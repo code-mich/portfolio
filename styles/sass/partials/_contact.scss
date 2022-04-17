@@ -70,3 +70,9 @@
         margin: 0 auto;
     }
 }
+
+@media (min-width: 1000px) {
+    .contact .contactText {
+        width: 60%;
+    }
+}

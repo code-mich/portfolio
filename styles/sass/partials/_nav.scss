@@ -149,6 +149,12 @@ nav {
     }
 }
 
+@media (min-width: 850px) {
+    nav {
+        padding: 2% 0;
+    }
+}
+
 @media (min-width: 1000px) {
     nav .menuItem a {
         font-size: 1.2rem;

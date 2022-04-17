@@ -613,6 +613,11 @@ nav .open .barThree {
     padding: 0;
   }
 }
+@media (min-width: 850px) {
+  nav {
+    padding: 2% 0;
+  }
+}
 @media (min-width: 1000px) {
   nav .menuItem a {
     font-size: 1.2rem;
@@ -973,5 +978,10 @@ header .headerText {
   .contact .contactText {
     width: 75%;
     margin: 0 auto;
+  }
+}
+@media (min-width: 1000px) {
+  .contact .contactText {
+    width: 60%;
   }
 }
